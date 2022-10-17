@@ -4,7 +4,7 @@
     // alert(username);
     //transcription(user) this is how to pass an argument to another function
   }
-  function getRandomArbitrary (min, max) {
+  function getRandomCardNumber (min, max) {
     var min = 1;
     var max = 13; 
       return x = Math.random() * (max - min) + min;
@@ -32,13 +32,13 @@
         card = stringNumber;
     }
     cardTranscription = card;
-    alert(stringNumber);
+    // alert(stringNumber);
   }
 
 
 
   inputUsername();
-  getRandomArbitrary();
+  getRandomCardNumber();
    randomNumber = parseInt(x);
    stringNumber = randomNumber.toString();
   var user;
