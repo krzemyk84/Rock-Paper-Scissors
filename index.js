@@ -1,4 +1,12 @@
-  function inputUsername() {
+startProgram ();
+randomNumber = parseInt(x);
+   stringNumber = randomNumber.toString();
+  randomColour = parseInt(y);
+   stringColour = randomColour.toString();
+  var user;
+  var cardTranscription;
+  var cardTranscriptionColour;
+function inputUsername() {
     const username = prompt ("Please enter your username:");
     user = username;
     // alert(username);
@@ -70,11 +78,26 @@ function getRandomCardColour (min, max) {
 
 // here card colour picking ends
 
+function startProgram () {
+  
+    inputUsername();
+    getRandomCardNumber();
+  getRandomCardColour();
+   transcription();
+  transcriptionColour();
+  alert (user + " you drew a " + cardTranscription + " of " + cardTranscriptionColour);
+  // restartProgram();
+  // alert (cardTranscriptionColour);
+
+  
+  
+  
+}
 function restartProgram () {
   var restart = prompt ("Do you want to try again? (y/n)");
   if (restart == "y") {
-    inputUsername();
-  }
+    startProgram();
+    }
   if (restart == "n") {
     alert ("Thanks and bye!");
     return;
@@ -84,19 +107,5 @@ function restartProgram () {
     restartProgram();
   }
 }
-
-  inputUsername();
-  getRandomCardNumber();
-  getRandomCardColour();
-   randomNumber = parseInt(x);
-   stringNumber = randomNumber.toString();
-  randomColour = parseInt(y);
-   stringColour = randomColour.toString();
-  var user;
-  var cardTranscription;
-  var cardTranscriptionColour;
-  transcription();
-  transcriptionColour();
-  alert (user + " you drew a " + cardTranscription + " of " + cardTranscriptionColour);
-  restartProgram();
-  // alert (cardTranscriptionColour);
+  
+  
